@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2318261564A93194BFDBDA36 /* Pods_LufthansaFlightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D30D906387456EF5C51C3B3 /* Pods_LufthansaFlightTracker.framework */; };
+		8080ED0D216DB108004DD890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED0C216DB108004DD890 /* AppDelegate.swift */; };
+		8080ED0F216DB108004DD890 /* FlightStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED0E216DB108004DD890 /* FlightStatusVC.swift */; };
+		8080ED12216DB108004DD890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8080ED10216DB108004DD890 /* Main.storyboard */; };
+		8080ED15216DB108004DD890 /* LufthansaFlightTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED13216DB108004DD890 /* LufthansaFlightTracker.xcdatamodeld */; };
+		8080ED17216DB10A004DD890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8080ED16216DB10A004DD890 /* Assets.xcassets */; };
+		8080ED1A216DB10A004DD890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8080ED18216DB10A004DD890 /* LaunchScreen.storyboard */; };
+		8080ED25216DB10B004DD890 /* LufthansaFlightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED24216DB10B004DD890 /* LufthansaFlightTrackerTests.swift */; };
+		8080ED30216DB10B004DD890 /* LufthansaFlightTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED2F216DB10B004DD890 /* LufthansaFlightTrackerUITests.swift */; };
+		8080ED3F216EA87C004DD890 /* AirportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED3E216EA87C004DD890 /* AirportsVC.swift */; };
+		8080ED41216EA8A1004DD890 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED40216EA8A1004DD890 /* FavoritesVC.swift */; };
+		8080ED44216EAF29004DD890 /* LufthansaAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED43216EAF29004DD890 /* LufthansaAPIHelper.swift */; };
+		8080ED47216EB021004DD890 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED46216EB021004DD890 /* Flight.swift */; };
+		8080ED49217085F4004DD890 /* FlightInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED48217085F4004DD890 /* FlightInfoVC.swift */; };
+		8080ED4B21711538004DD890 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED4A21711538004DD890 /* Airport.swift */; };
+		8080ED52217179D4004DD890 /* AirportInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080ED51217179D4004DD890 /* AirportInfoVC.swift */; };
+		8656854DC452F1EE739727BC /* Pods_LufthansaFlightTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A332B2CC428B2CCAE7B80B0 /* Pods_LufthansaFlightTrackerUITests.framework */; };
+		D878554EB8232A7F83CB51E4 /* Pods_LufthansaFlightTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E88F579D5B2B5A02742C70 /* Pods_LufthansaFlightTrackerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8080ED21216DB10B004DD890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8080ED01216DB108004DD890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8080ED08216DB108004DD890;
+			remoteInfo = LufthansaFlightTracker;
+		};
+		8080ED2C216DB10B004DD890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8080ED01216DB108004DD890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8080ED08216DB108004DD890;
+			remoteInfo = LufthansaFlightTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1869F37279222D77D2061E43 /* Pods-LufthansaFlightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTracker/Pods-LufthansaFlightTracker.release.xcconfig"; sourceTree = "<group>"; };
+		21E88F579D5B2B5A02742C70 /* Pods_LufthansaFlightTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LufthansaFlightTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		259A6EA9C210EC7C110B13C0 /* Pods-LufthansaFlightTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTrackerUITests/Pods-LufthansaFlightTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48317150131C8D1F68EAD837 /* Pods-LufthansaFlightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTracker/Pods-LufthansaFlightTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		775AC5B39FA815D9FACD424B /* Pods-LufthansaFlightTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTrackerTests/Pods-LufthansaFlightTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A332B2CC428B2CCAE7B80B0 /* Pods_LufthansaFlightTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LufthansaFlightTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D30D906387456EF5C51C3B3 /* Pods_LufthansaFlightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LufthansaFlightTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8080ED09216DB108004DD890 /* LufthansaFlightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaFlightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8080ED0C216DB108004DD890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8080ED0E216DB108004DD890 /* FlightStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusVC.swift; sourceTree = "<group>"; };
+		8080ED11216DB108004DD890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8080ED14216DB108004DD890 /* LufthansaFlightTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LufthansaFlightTracker.xcdatamodel; sourceTree = "<group>"; };
+		8080ED16216DB10A004DD890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8080ED19216DB10A004DD890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8080ED1B216DB10A004DD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8080ED20216DB10B004DD890 /* LufthansaFlightTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LufthansaFlightTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8080ED24216DB10B004DD890 /* LufthansaFlightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LufthansaFlightTrackerTests.swift; sourceTree = "<group>"; };
+		8080ED26216DB10B004DD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8080ED2B216DB10B004DD890 /* LufthansaFlightTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LufthansaFlightTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8080ED2F216DB10B004DD890 /* LufthansaFlightTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LufthansaFlightTrackerUITests.swift; sourceTree = "<group>"; };
+		8080ED31216DB10B004DD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8080ED3E216EA87C004DD890 /* AirportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsVC.swift; sourceTree = "<group>"; };
+		8080ED40216EA8A1004DD890 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		8080ED43216EAF29004DD890 /* LufthansaAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LufthansaAPIHelper.swift; sourceTree = "<group>"; };
+		8080ED46216EB021004DD890 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		8080ED48217085F4004DD890 /* FlightInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoVC.swift; sourceTree = "<group>"; };
+		8080ED4A21711538004DD890 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		8080ED51217179D4004DD890 /* AirportInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportInfoVC.swift; sourceTree = "<group>"; };
+		DDE9D67433236574DC800CCD /* Pods-LufthansaFlightTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTrackerUITests/Pods-LufthansaFlightTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF2F06210CCAE1F6C554E288 /* Pods-LufthansaFlightTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaFlightTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaFlightTrackerTests/Pods-LufthansaFlightTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8080ED06216DB108004DD890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2318261564A93194BFDBDA36 /* Pods_LufthansaFlightTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED1D216DB10B004DD890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D878554EB8232A7F83CB51E4 /* Pods_LufthansaFlightTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED28216DB10B004DD890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8656854DC452F1EE739727BC /* Pods_LufthansaFlightTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1357F13E2C8AE772FE4D766E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48317150131C8D1F68EAD837 /* Pods-LufthansaFlightTracker.debug.xcconfig */,
+				1869F37279222D77D2061E43 /* Pods-LufthansaFlightTracker.release.xcconfig */,
+				775AC5B39FA815D9FACD424B /* Pods-LufthansaFlightTrackerTests.debug.xcconfig */,
+				FF2F06210CCAE1F6C554E288 /* Pods-LufthansaFlightTrackerTests.release.xcconfig */,
+				259A6EA9C210EC7C110B13C0 /* Pods-LufthansaFlightTrackerUITests.debug.xcconfig */,
+				DDE9D67433236574DC800CCD /* Pods-LufthansaFlightTrackerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40B5E38E647CD5CDFB80208F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D30D906387456EF5C51C3B3 /* Pods_LufthansaFlightTracker.framework */,
+				21E88F579D5B2B5A02742C70 /* Pods_LufthansaFlightTrackerTests.framework */,
+				7A332B2CC428B2CCAE7B80B0 /* Pods_LufthansaFlightTrackerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8080ED00216DB108004DD890 = {
+			isa = PBXGroup;
+			children = (
+				8080ED0B216DB108004DD890 /* LufthansaFlightTracker */,
+				8080ED23216DB10B004DD890 /* LufthansaFlightTrackerTests */,
+				8080ED2E216DB10B004DD890 /* LufthansaFlightTrackerUITests */,
+				8080ED0A216DB108004DD890 /* Products */,
+				1357F13E2C8AE772FE4D766E /* Pods */,
+				40B5E38E647CD5CDFB80208F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8080ED0A216DB108004DD890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED09216DB108004DD890 /* LufthansaFlightTracker.app */,
+				8080ED20216DB10B004DD890 /* LufthansaFlightTrackerTests.xctest */,
+				8080ED2B216DB10B004DD890 /* LufthansaFlightTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8080ED0B216DB108004DD890 /* LufthansaFlightTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED0C216DB108004DD890 /* AppDelegate.swift */,
+				8080ED4E21715376004DD890 /* Views */,
+				8080ED42216EAF16004DD890 /* Client */,
+				8080ED45216EB003004DD890 /* Model */,
+				8080ED3D216EA863004DD890 /* Controllers */,
+				8080ED10216DB108004DD890 /* Main.storyboard */,
+				8080ED16216DB10A004DD890 /* Assets.xcassets */,
+				8080ED18216DB10A004DD890 /* LaunchScreen.storyboard */,
+				8080ED1B216DB10A004DD890 /* Info.plist */,
+				8080ED13216DB108004DD890 /* LufthansaFlightTracker.xcdatamodeld */,
+			);
+			path = LufthansaFlightTracker;
+			sourceTree = "<group>";
+		};
+		8080ED23216DB10B004DD890 /* LufthansaFlightTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED24216DB10B004DD890 /* LufthansaFlightTrackerTests.swift */,
+				8080ED26216DB10B004DD890 /* Info.plist */,
+			);
+			path = LufthansaFlightTrackerTests;
+			sourceTree = "<group>";
+		};
+		8080ED2E216DB10B004DD890 /* LufthansaFlightTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED2F216DB10B004DD890 /* LufthansaFlightTrackerUITests.swift */,
+				8080ED31216DB10B004DD890 /* Info.plist */,
+			);
+			path = LufthansaFlightTrackerUITests;
+			sourceTree = "<group>";
+		};
+		8080ED3D216EA863004DD890 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED0E216DB108004DD890 /* FlightStatusVC.swift */,
+				8080ED3E216EA87C004DD890 /* AirportsVC.swift */,
+				8080ED40216EA8A1004DD890 /* FavoritesVC.swift */,
+				8080ED48217085F4004DD890 /* FlightInfoVC.swift */,
+				8080ED51217179D4004DD890 /* AirportInfoVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8080ED42216EAF16004DD890 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED43216EAF29004DD890 /* LufthansaAPIHelper.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		8080ED45216EB003004DD890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8080ED46216EB021004DD890 /* Flight.swift */,
+				8080ED4A21711538004DD890 /* Airport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8080ED4E21715376004DD890 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8080ED08216DB108004DD890 /* LufthansaFlightTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8080ED34216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTracker" */;
+			buildPhases = (
+				742F086AE29E66D0B1648D3F /* [CP] Check Pods Manifest.lock */,
+				8080ED05216DB108004DD890 /* Sources */,
+				8080ED06216DB108004DD890 /* Frameworks */,
+				8080ED07216DB108004DD890 /* Resources */,
+				84810462FBFBF8A16DF63407 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LufthansaFlightTracker;
+			productName = LufthansaFlightTracker;
+			productReference = 8080ED09216DB108004DD890 /* LufthansaFlightTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8080ED1F216DB10B004DD890 /* LufthansaFlightTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8080ED37216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTrackerTests" */;
+			buildPhases = (
+				E9E0C54EA88EBE25F9C08186 /* [CP] Check Pods Manifest.lock */,
+				8080ED1C216DB10B004DD890 /* Sources */,
+				8080ED1D216DB10B004DD890 /* Frameworks */,
+				8080ED1E216DB10B004DD890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8080ED22216DB10B004DD890 /* PBXTargetDependency */,
+			);
+			name = LufthansaFlightTrackerTests;
+			productName = LufthansaFlightTrackerTests;
+			productReference = 8080ED20216DB10B004DD890 /* LufthansaFlightTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8080ED2A216DB10B004DD890 /* LufthansaFlightTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8080ED3A216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTrackerUITests" */;
+			buildPhases = (
+				ADB844C4348DFFD42E396BE7 /* [CP] Check Pods Manifest.lock */,
+				8080ED27216DB10B004DD890 /* Sources */,
+				8080ED28216DB10B004DD890 /* Frameworks */,
+				8080ED29216DB10B004DD890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8080ED2D216DB10B004DD890 /* PBXTargetDependency */,
+			);
+			name = LufthansaFlightTrackerUITests;
+			productName = LufthansaFlightTrackerUITests;
+			productReference = 8080ED2B216DB10B004DD890 /* LufthansaFlightTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8080ED01216DB108004DD890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Vaibhav Gattani";
+				TargetAttributes = {
+					8080ED08216DB108004DD890 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					8080ED1F216DB10B004DD890 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8080ED08216DB108004DD890;
+					};
+					8080ED2A216DB10B004DD890 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8080ED08216DB108004DD890;
+					};
+				};
+			};
+			buildConfigurationList = 8080ED04216DB108004DD890 /* Build configuration list for PBXProject "LufthansaFlightTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8080ED00216DB108004DD890;
+			productRefGroup = 8080ED0A216DB108004DD890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8080ED08216DB108004DD890 /* LufthansaFlightTracker */,
+				8080ED1F216DB10B004DD890 /* LufthansaFlightTrackerTests */,
+				8080ED2A216DB10B004DD890 /* LufthansaFlightTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8080ED07216DB108004DD890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8080ED1A216DB10A004DD890 /* LaunchScreen.storyboard in Resources */,
+				8080ED17216DB10A004DD890 /* Assets.xcassets in Resources */,
+				8080ED12216DB108004DD890 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED1E216DB10B004DD890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED29216DB10B004DD890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		742F086AE29E66D0B1648D3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LufthansaFlightTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84810462FBFBF8A16DF63407 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LufthansaFlightTracker/Pods-LufthansaFlightTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LufthansaFlightTracker/Pods-LufthansaFlightTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB844C4348DFFD42E396BE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LufthansaFlightTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E0C54EA88EBE25F9C08186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LufthansaFlightTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8080ED05216DB108004DD890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8080ED4B21711538004DD890 /* Airport.swift in Sources */,
+				8080ED49217085F4004DD890 /* FlightInfoVC.swift in Sources */,
+				8080ED52217179D4004DD890 /* AirportInfoVC.swift in Sources */,
+				8080ED41216EA8A1004DD890 /* FavoritesVC.swift in Sources */,
+				8080ED3F216EA87C004DD890 /* AirportsVC.swift in Sources */,
+				8080ED0F216DB108004DD890 /* FlightStatusVC.swift in Sources */,
+				8080ED0D216DB108004DD890 /* AppDelegate.swift in Sources */,
+				8080ED15216DB108004DD890 /* LufthansaFlightTracker.xcdatamodeld in Sources */,
+				8080ED44216EAF29004DD890 /* LufthansaAPIHelper.swift in Sources */,
+				8080ED47216EB021004DD890 /* Flight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED1C216DB10B004DD890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8080ED25216DB10B004DD890 /* LufthansaFlightTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8080ED27216DB10B004DD890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8080ED30216DB10B004DD890 /* LufthansaFlightTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8080ED22216DB10B004DD890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8080ED08216DB108004DD890 /* LufthansaFlightTracker */;
+			targetProxy = 8080ED21216DB10B004DD890 /* PBXContainerItemProxy */;
+		};
+		8080ED2D216DB10B004DD890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8080ED08216DB108004DD890 /* LufthansaFlightTracker */;
+			targetProxy = 8080ED2C216DB10B004DD890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8080ED10216DB108004DD890 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8080ED11216DB108004DD890 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8080ED18216DB10A004DD890 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8080ED19216DB10A004DD890 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8080ED32216DB10B004DD890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8080ED33216DB10B004DD890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8080ED35216DB10B004DD890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48317150131C8D1F68EAD837 /* Pods-LufthansaFlightTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8080ED36216DB10B004DD890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1869F37279222D77D2061E43 /* Pods-LufthansaFlightTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8080ED38216DB10B004DD890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775AC5B39FA815D9FACD424B /* Pods-LufthansaFlightTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LufthansaFlightTracker.app/LufthansaFlightTracker";
+			};
+			name = Debug;
+		};
+		8080ED39216DB10B004DD890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2F06210CCAE1F6C554E288 /* Pods-LufthansaFlightTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LufthansaFlightTracker.app/LufthansaFlightTracker";
+			};
+			name = Release;
+		};
+		8080ED3B216DB10B004DD890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259A6EA9C210EC7C110B13C0 /* Pods-LufthansaFlightTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LufthansaFlightTracker;
+			};
+			name = Debug;
+		};
+		8080ED3C216DB10B004DD890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE9D67433236574DC800CCD /* Pods-LufthansaFlightTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LufthansaFlightTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VG.LufthansaFlightTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LufthansaFlightTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8080ED04216DB108004DD890 /* Build configuration list for PBXProject "LufthansaFlightTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080ED32216DB10B004DD890 /* Debug */,
+				8080ED33216DB10B004DD890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8080ED34216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080ED35216DB10B004DD890 /* Debug */,
+				8080ED36216DB10B004DD890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8080ED37216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080ED38216DB10B004DD890 /* Debug */,
+				8080ED39216DB10B004DD890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8080ED3A216DB10B004DD890 /* Build configuration list for PBXNativeTarget "LufthansaFlightTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8080ED3B216DB10B004DD890 /* Debug */,
+				8080ED3C216DB10B004DD890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8080ED13216DB108004DD890 /* LufthansaFlightTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8080ED14216DB108004DD890 /* LufthansaFlightTracker.xcdatamodel */,
+			);
+			currentVersion = 8080ED14216DB108004DD890 /* LufthansaFlightTracker.xcdatamodel */;
+			path = LufthansaFlightTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8080ED01216DB108004DD890 /* Project object */;
+}

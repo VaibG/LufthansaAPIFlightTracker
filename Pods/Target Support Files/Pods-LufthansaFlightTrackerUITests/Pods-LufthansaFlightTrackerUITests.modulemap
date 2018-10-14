@@ -1,0 +1,6 @@
+framework module Pods_LufthansaFlightTrackerUITests {
+  umbrella header "Pods-LufthansaFlightTrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
